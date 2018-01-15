@@ -14,6 +14,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Navigation Menu - Slider.</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+    // Modify class of body tag
+        function displayMenu(){
+            document.getElementById('page-body').setAttribute('class', 'menu-slider-displayed');
+            document.getElementById('menu-button').setAttribute('onclick', 'hideMenu()');
+        }
+        function hideMenu(){
+            document.getElementById('page-body').setAttribute('class', 'menu-slider-hidden');
+            document.getElementById('menu-button').setAttribute('onclick', 'displayMenu()');
+        }
+    </script>
 </head>
 <!-- The body class & id have been added for Js to access and allow toggling of the Mobile Menu -->
 <body id="page-body" class="menu-slider-hidden">
@@ -34,7 +45,7 @@
     <section id="container">
         <!-- The header contains the navigation menu for the page when in desktop view & the mobile-menu display/hide button -->
         <header>
-            <a href="#" id="menu-button"></a>
+            <a href="#" id="menu-button" onclick="displayMenu()"></a>
             <ul class="desktop-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
