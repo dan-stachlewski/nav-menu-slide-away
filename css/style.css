@@ -38,7 +38,7 @@ p{
     font-size: 1em;
 }
 
-#menu-slider{
+.menu-slider{
     width: 330px; height: 100%;
     background-color: #222; color: #ddd;
     position: absolute;
@@ -49,7 +49,7 @@ p{
     background: #eee;
     width: 100%;
     position: absolute;
-    left: 0; top: 0;
+    /* left: 0; top: 0; */
     z-index: 5;
 }
 
@@ -57,8 +57,25 @@ p{
 
 
 /* Styles when Side Menu is HIDDEN */
-
-
+.menu-slider-hidden #container{
+    left: 0;
+}
+.menu-slider-hidden #menu-button{
+    background-image: url('../assets/menu-icon.png');
+}
 
 
 /* Styles when Side Menu is DISPLAYED */
+.menu-slider-displayed #container{
+    left: 330px;
+}
+.menu-slider-displayed #menu-button{
+    background-image: url('../assets/close-icon.png');
+}
+
+
+#menu-button{
+    display: block;
+    width: 40px; height: 40px;
+    background-size: contain;
+}
