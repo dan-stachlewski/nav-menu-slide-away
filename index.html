@@ -15,7 +15,8 @@
     <title>Navigation Menu - Slider.</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<!-- The body class & id have been added for Js to access and allow toggling of the Mobile Menu -->
+<body id="page-body" class="menu-slider-hidden">
     <!--
     This is the Mobile Menu container that is exposed when the icon is clicked.
     Make sure it sits outside of the below container.
@@ -30,7 +31,7 @@
         </ul>
     </section>
     <!-- Section of page that slides right on open & left on close. -->
-    <section class="container">
+    <section id="container">
         <!-- The header contains the navigation menu for the page when in desktop view & the mobile-menu display/hide button -->
         <header>
             <a href="#" id="menu-button"></a>
