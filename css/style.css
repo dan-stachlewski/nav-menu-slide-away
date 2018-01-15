@@ -7,10 +7,21 @@
     Date Started: Tues 16/01/2018
 */
 
+/* Google Fonts Embed Link */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway');
+
 /* CSS RESETS */
 * {
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3{
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
 }
 
 body{
